@@ -106,8 +106,8 @@ body {
   .navbar {
     padding: 1rem;
   }
-  .nav-btn{
-    display: none;;
+  .nav-btn {
+    display: none;
   }
 }
 
@@ -125,3 +125,16 @@ body {
 .carousel-control-next-icon {
   background-size: 50%, 50%;
 }
+
+/* Icon Circle Styles */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+}
+
+/* Light background for sections */
+.bg-light-custom {
+  background: #f8f9fa;
+}
+
+/* Footer Section */
