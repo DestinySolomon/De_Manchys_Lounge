@@ -88,6 +88,10 @@ body {
 .hero-content h1 {
   font-weight: 700;
   font-size: 3rem;
+ font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .hero-content span {
