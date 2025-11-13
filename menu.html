@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu | De Manchys Lounge</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="topnav navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">De Manchys Lounge</a>
+
+      <div class="ms-auto d-flex align-items-center gap-3">
+        <div class="me-2 text-light small d-none d-lg-block">Menu</div>
+
+        <!-- Cart (topnav) -->
+        <button id="cartBtn" class="btn cart-btn d-flex align-items-center gap-2 px-3" type="button" aria-label="Cart">
+          <i class="bi bi-cart3" style="font-size:18px"></i>
+          <span class="small d-none d-md-inline">Cart</span>
+          <span id="cartCounter" class="cart-counter">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="menu-header">
+    <h1>Our Exquisite Menu</h1>
+    <p>Explore a world of flavour — from rich traditional soups to continental rice dishes. Choose, customize, and order.</p>
+  </header>
+
+  <!-- Main Grid -->
+  <main class="container pb-5">
+    <div class="row g-4" id="menuGrid">
+      <!-- Cards inserted by JS -->
+    </div>
+  </main>
+
+  <!-- Customize Modal (shared) -->
+  <div class="modal fade" id="customizeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="modalMealTitle">Customize Meal</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p id="modalMealDesc" class="mb-3 text-light"></p>
+
+          <div id="modalAddons">
+            <!-- addon items injected here -->
+          </div>
+
+          <div class="mt-3">
+            <small class="text-light">Tip: use + to increase addons (e.g., extra meats) and − to reduce.</small>
+          </div>
+        </div>
+
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+          <button id="addToOrderBtn" type="button" class="btn btn-order">Add to Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast area -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
